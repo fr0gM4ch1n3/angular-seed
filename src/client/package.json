@@ -1,0 +1,8 @@
+{
+  "name": "electron",
+  "version": "1.0.0",
+  "main": "electron.js",
+  "dependencies": {
+    "electron-store": "^2.0.0"
+  }
+}

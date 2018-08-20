@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.example.angular-seed" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>angular-seed</name>
+    <description>angular-seed</description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="DisallowOverscroll" value="true" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <preference name="DisallowOverscroll" value="true" />
+
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <!-- 1334x1334 -->
+        <!-- <splash src="www/assets/iOS/Resources/splash/Default@2x~iphone~anyany.png" /> -->
+        <!-- 750x1334 -->
+        <!-- <splash src="www/assets/iOS/Resources/splash/Default@2x~iphone~comany.png" /> -->
+        <!-- 1334x750 -->
+        <!-- <splash src="www/assets/iOS/Resources/splash/Default@2x~iphone~comcom.png" /> -->
+        <!-- 2208x2208 -->
+        <!-- <splash src="www/assets/iOS/Resources/splash/Default@3x~iphone~anyany.png" /> -->
+        <!-- 2208x1242 -->
+        <!-- <splash src="www/assets/iOS/Resources/splash/Default@3x~iphone~anycom.png" /> -->
+        <!-- 1242x2208 -->
+        <!-- <splash src="www/assets/iOS/Resources/splash/Default@3x~iphone~comany.png" /> -->
+        <!-- 2732x2732 -->
+        <!-- <splash src="www/assets/iOS/Resources/splash/Default@2x~ipad~anyany.png" /> -->
+        <!-- 1278x2732 -->
+        <!-- <splash src="www/assets/iOS/Resources/splash/Default@2x~ipad~comany.png" /> -->
+        <!-- 2732x2732 -->
+        <!-- <splash src="www/assets/iOS/Resources/splash/Default@2x~ipad~anyany.png" /> -->
+    </platform>
+</widget>

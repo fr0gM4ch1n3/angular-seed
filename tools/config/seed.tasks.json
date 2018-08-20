@@ -1,0 +1,121 @@
+{
+  "initialize": [
+    "noop"
+  ],
+  "desktop": [
+    "build.dev",
+    "desktop.libs",
+    "gulp-install",
+    "copy.electron.dependencies",
+    "desktop.build"
+  ],
+  "desktop.mac": [
+    "desktop.package.mac"
+  ],
+  "desktop.windows": [
+    "desktop.package.windows"
+  ],
+  "desktop.linux": [
+    "desktop.package.linux"
+  ],
+  "build.desktop.rollup.mac": [
+    "build.desktop.rollup.aot",
+    "gulp-install",
+    "copy.electron.dependencies",
+    "desktop.package.mac"
+  ],
+  "build.desktop.rollup.windows": [
+    "initialize",
+    "build.desktop.rollup.aot",
+    "desktop.package.windows"
+  ],
+  "build.desktop.rollup.linux": [
+    "initialize",
+    "build.desktop.rollup.aot",
+    "desktop.package.linux"
+  ],
+  "build.mobile.ios.rollup.aot": [
+    "build.prod.rollup.aot",
+    "cordova.ios.build"
+  ],
+  "build.dev": [
+    "initialize",
+    "clean.once",
+    "tslint",
+    "build.assets.dev",
+    "build.html_css",
+    "build.js.dev",
+    "build.index.dev",
+    "sw.manifest.static"
+  ],
+  "build.dev.watch": [
+    "build.dev",
+    "watch.dev"
+  ],
+  "build.prod.rollup.aot": [
+    "initialize",
+    "check.tools",
+    "clean.prod",
+    "tslint",
+    "build.assets.prod",
+    "build.html_css",
+    "copy.prod.rollup.aot",
+    "compile.ahead.prod",
+    "build.js.prod.rollup.aot",
+    "build.bundles",
+    "build.bundles.app.rollup.aot",
+    "transpile.bundles.rollup.aot",
+    "minify.bundles",
+    "build.index.prod",
+    "sw.manifest.static",
+    "minify.index",
+    "deprecate.notification"
+  ],
+  "build.desktop.rollup.aot": [
+    "initialize",
+    "check.tools",
+    "clean.prod",
+    "tslint",
+    "build.assets.prod",
+    "build.fonts",
+    "build.html_css",
+    "copy.prod.rollup.aot",
+    "compile.ahead.prod",
+    "build.js.prod.rollup.aot",
+    "build.bundles",
+    "build.bundles.app.rollup.aot",
+    "build.bundles.electron.rollup.aot",
+    "transpile.bundles.rollup.aot",
+    "transpile.electron.rollup.aot",
+    "minify.bundles",
+    "build.index.prod",
+    "sw.manifest.static",
+    "minify.index"
+  ],
+  "build.test": [
+    "initialize",
+    "clean.once",
+    "build.assets.dev",
+    "build.html_css",
+    "build.js.dev",
+    "build.js.test",
+    "build.index.dev"
+  ],
+  "serve.dev": [
+    "build.dev",
+    "server.start",
+    "watch.dev"
+  ],
+  "serve.prod.rollup.aot": [
+    "build.prod.rollup.aot",
+    "server.prod"
+  ],
+  "sme.prod.rollup.aot": [
+    "build.prod.rollup.aot",
+    "build.sme.prod.rollup.aot"
+  ],
+  "test": [
+    "build.test",
+    "karma.run"
+  ]
+}
